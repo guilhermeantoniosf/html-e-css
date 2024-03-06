@@ -160,10 +160,13 @@ aside > ul{
     list-style-position: inside;
     columns: 2;
 }
+div.final{
+    padding-top: 15px;
+}
 footer{
     background-color: var(--cor05);
     color: white;
     text-align: center;
-    font-size: 0.8em;
+    font-size: 0.9em;
     padding: 5px;
 }
