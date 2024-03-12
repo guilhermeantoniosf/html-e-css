@@ -3,15 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documento</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body{
-            height: 97vh;
+            /* height: 97vh;
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
-            background-position: center top;
-            background-repeat: repeat-y;
+            background-position: center center;
+            background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed; */
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
+
+            /* shorthand - background:
+            color > image > position > repeat > [size(mas não acieta)] > attachment */
+
+            /* temos o padrão que é o scroll, onde a imagem de fundo ficará junto com o rolamento da página
+            temos o fixed, onde o fundo fica fixo independente do tamanho da view point
+            */
+            
             /* dois valores escritos possiveis em background size:
             valores fixos: pode ser em px ou em porcentagem, na qual é melhor o da porcentagem
             padrão: auto; 
@@ -21,7 +33,7 @@
         }
         main{
             background-color: azure;
-            width: 400px;
+            max-width: 600px;
             padding: 10px;
             margin: auto;
             border: 1px solid black;
