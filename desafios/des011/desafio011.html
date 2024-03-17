@@ -4,16 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio do Astronauta</title>
-   <style>
-    #conteudo{
-        background-image: url(imagens/astronauta.png);
-        background-size: 100% 100%;
-        position: absolute;
-        height: 50%;
-    }
-   </style>
+    <style>
+        body#conteiner{
+            background-image: url(imagens/espaco.jpg);
+            position: relative;
+            height: 96vh;
+            background-size: 100% 100%;
+        }
+        div#astro{
+            background:  url(imagens/astronauta.png) center center no-repeat fixed;
+            background-size: 100% 100%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50% , -50%);
+            height: 500px;
+            width: 500px;
+            margin: auto;
+            
+        }
+    </style>
 </head>
-<body id="container">
-    <div id="conteudo"></div>
+<body id="conteiner">
+    <div id="astro">
+
+    </div>
 </body>
 </html>
