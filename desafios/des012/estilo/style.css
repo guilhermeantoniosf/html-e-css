@@ -1,4 +1,9 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+:root{
+    --fonte01: verdana , geneva 
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -32,6 +37,12 @@ header a , footer a{
 header a:hover, footer a:hover{
     text-decoration: underline;
 }
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
 section.norma{
     background-color: white;
     color:white;
@@ -39,6 +50,11 @@ section.norma{
 section.imagem{
     background-color: rgb(51, 51, 51);
     color: white;
+    
+}
+section.imagem > p{
+    width: 400px;
+    background-color: rgb(32, 24, 24);
 }
 footer{
     background-color: black;
