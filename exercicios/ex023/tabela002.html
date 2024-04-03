@@ -20,6 +20,13 @@
         thead,tfoot{
             background-color: rgb(96, 161, 161);
         }
+        caption{ /*Legenda da tabela*/
+            font-weight: bold;
+            font-size: 1.5em;
+            padding: 10px;
+            background-color: lightgray;
+
+        }
         
     </style>
 </head>
@@ -35,10 +42,12 @@
             TR,TD,TH
     -->
     <table>
+        <caption>População dos Estados Federativos</caption>
+        <!-- Caption: legenda da tabela  -->
             <thead> <!-- A parte da cabeça da tabela-->
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody> <!-- Parte do corpo da tabela-->
@@ -59,7 +68,7 @@
         </tbody>
         <tfoot> <!--Parte de baixo da tabela-->
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td><strong>00000000</strong></td>
             </tr>
         </tfoot>
