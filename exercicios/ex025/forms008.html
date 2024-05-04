@@ -7,22 +7,26 @@
 </head>
 <body>
     <h1>Exemplo de Formulário</h1>
-    <form action="cadastro.php" method="get"></form>
+    <form action="cadastro.php" method="get">
     <p>
-        <label for="in1"></label>
-        <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + (in2.value)">
+        <label for="in1">Soma:</label>
+        <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
     </p>
     <p>
-        <label for=""></label>
-        <input type="number" name="n2" id="in2" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + (in2.value)">
+        <label for="in2">Soma:</label>
+        <input type="number" name="n2" id="in2" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
     </p>
     <p>
         <label for="isoma">Soma:</label>
         <output name="soma" id="isoma">0</output>
+        <!-- Caucular e mostrar na tela, ele não é um dado  -->
+        
     </p>
     <p>
         <input type="submit">
         <input type="reset">
     </p>
+
+    </form>
 </body>
 </html>
