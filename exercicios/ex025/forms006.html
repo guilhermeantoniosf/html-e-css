@@ -7,7 +7,8 @@
 </head>
 <body>
     <h1>Exemplo de Formulário</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <!-- Tem que usar o metodo post quando for colocar imagens, pois o metodo post aguenta de 3 mil bytes para cima -->
         <p>
             <label for=""icor>Cor:</label>
             <input type="color" id="icor" name="cor" value="#00ff00">
@@ -19,7 +20,7 @@
         <p>
             <label for="iphoto">Foto de perfil</label>
             <input type="file" 
-            name="photo" id="iphoto" value="Escolha uma foto">
+            name="photo" id="iphoto" >
         </p>
         <p>
             <input type="submit" value="Enviar">
