@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/* Estilo para impressão */
+
+*{
+    margin: 10px;
+    padding: 10px;
+}
+html{
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5em;
+}
+
+menu{
+    display: none; 
+    /* Significa que o menu não aparecerá */
+
+}
+article{
+    width: 100%;
+}
+article::after{
+    content: 'Este artigo foi feito por mim no dia referido 21/09/2009';
+}
