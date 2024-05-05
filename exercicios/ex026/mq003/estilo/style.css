@@ -1,0 +1,32 @@
+@media all{
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    html, body{
+        width: 100vw;
+        height: 100vh;
+        background-color: #233eff;
+    }
+
+}
+
+
+@media screen and (orientation: portrait){
+    body{
+        background: url(../imagens/cev-portrait.jpg);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    body{
+        background: url(../imagens/cev-landscape.jpg);
+        background-position: left bottom;
+        background-repeat: no-repeat;
+    }
+}
+
+/* You may put the css settings on only file, but on the previous folder, mq002, I put all the css settings in another filers , however everyone had their own folder */
